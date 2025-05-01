@@ -17,20 +17,19 @@ const info = [
 
 const BottomInfoSection = () => {
   return (
-    <section
-      className="py-16 px-6 bg-gray-50 mx-auto"
-      style={{ width: '1341px', height: '500px' }}
-    >
-      <div className="grid md:grid-cols-3 gap-10 text-center h-full items-start">
-        {info.map((item, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md rounded-xl p-6 h-[400px] flex flex-col justify-center"
-          >
-            <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-            <p className="text-gray-600 text-base leading-relaxed">{item.text}</p>
-          </div>
-        ))}
+    <section className="py-8 md:py-12 lg:py-16 px-4 md:px-6 bg-gray-50 w-full">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+          {info.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-md rounded-xl p-4 md:p-6 h-auto min-h-64 flex flex-col justify-center"
+            >
+              <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">{item.title}</h3>
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">{item.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Button from '../../components/Button/Button'; // Adjust the import path as necessary
 
 const teamMembers = [
   {
@@ -34,9 +35,7 @@ const TeamSection = () => {
               Proin ullamcorper pretium orci. Donec nec scelerisque risus leo. Nam massa dolor imperdiet nec consectetur
               congue id sem. Maecenas malesuada faucibus finibus.
             </p>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md">
-              View All Members
-            </button>
+           <Button>  View All Members</Button>
           </div>
 
           <div className="grid grid-cols-2 gap-6">

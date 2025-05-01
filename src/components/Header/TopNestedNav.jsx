@@ -16,7 +16,7 @@ export default function Adbar(){
         <div className="flex items-center space-x-4 mt-2 md:mt-0">
           <div className="flex items-center">
             <span className="text-gray-600">Need help? Call Us: </span>
-            <a href="tel:+1234567890" className="ml-1 font-medium text-blue-600 hover:underline">+1-234-567-890</a>
+            <a href="tel:+880 1624592483" className="ml-1 font-medium text-blue-600 hover:underline">+880 1624592483</a>
           </div>
           
           <div className="relative group">

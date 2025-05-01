@@ -4,6 +4,7 @@ import Adbar from '../../components/Header/TopNestedNav'
 import NestedNavbar from '../../components/Header/NestedNav'
 import Footer from '../../components/Footer/Footer'
 import Footermain from '../../components/Footer/FooterMain'
+import YourCart from '../SubPages/CardPage'
 
 
 export default function ContractPage() {
@@ -13,7 +14,7 @@ export default function ContractPage() {
      <Navbar/>
      <NestedNavbar/>
      <section>
-   
+        <YourCart/>
    
      </section>
      <Footer/>

@@ -26,8 +26,9 @@ export default function ShopPage() {
     <br />
     
       </section>
-      <Footer/>
       <Footermain/>
+      <Footer/>
+
     
     </>
   )

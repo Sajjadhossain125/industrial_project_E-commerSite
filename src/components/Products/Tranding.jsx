@@ -1,4 +1,10 @@
 import { useState } from "react";
+const imageMap = import.meta.glob('../../assets/images/about/icons/*.png', {
+  eager: true,
+  import: 'default',
+});
+
+const imagePaths = Object.values(imageMap);
 
 const ProductShowcase = () => {
   const [activeCategory, setActiveCategory] = useState("Top Selling");
@@ -111,31 +117,31 @@ const ProductShowcase = () => {
       id: 1,
       title: "Best prices & offers",
       description: "Orders $50 or more",
-      icon: "💰"
+      images: "./src/assets/images/about/icons/icon-1.png"
     },
     {
       id: 2,
       title: "Free delivery",
       description: "24/7 amazing services",
-      icon: "🚚"
+      images: "🚚"
     },
     {
       id: 3,
       title: "Great daily deal",
       description: "When you sign up",
-      icon: "📝"
+      images: "📝"
     },
     {
       id: 4,
       title: "Wide assortment",
       description: "Mega Discounts",
-      icon: "🛒"
+      images: "🛒"
     },
     {
       id: 5,
       title: "Easy returns",
       description: "Within 30 days",
-      icon: "♻️" 
+      images: "♻️" 
     }
   ];
   
@@ -237,9 +243,11 @@ const ProductShowcase = () => {
       
       {/* Features */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-        {features.map((feature) => (
+        {features.map((feature,index) => (
           <div key={feature.id} className="flex items-center p-4 border rounded-lg">
-            <div className="text-3xl mr-4 text-green-500">{feature.icon}</div>
+            <div className="text-3xl mr-4 text-green-500">
+              <img src={imagePaths[index]} alt="" />
+              </div>
             <div>
               <h3 className="font-medium">{feature.title}</h3>
               <p className="text-sm text-gray-500">{feature.description}</p>

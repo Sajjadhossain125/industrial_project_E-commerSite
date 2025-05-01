@@ -125,27 +125,7 @@ export default function Footermain() {
             </div>
           </div>
   
-          {/* Install App Section */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-5 gap-8">
-            <div className="md:col-span-4">
-              {/* This space is intentionally left blank to match layout */}
-            </div>
-            <div className="col-span-1">
-              <h3 className="text-gray-800 font-semibold mb-4">Install App</h3>
-              <p className="text-sm text-gray-600 mb-4">From App Store or Google Play</p>
-              <div className="flex space-x-2 mb-4">
-                <img src="/api/placeholder/120/40" alt="App Store" className="h-10" />
-                <img src="/api/placeholder/120/40" alt="Google Play" className="h-10" />
-              </div>
-              <p className="text-sm text-gray-600 mb-2">Secured Payment Gateways</p>
-              <div className="flex space-x-2">
-                <img src="/api/placeholder/40/24" alt="Visa" className="h-6" />
-                <img src="/api/placeholder/40/24" alt="Mastercard" className="h-6" />
-                <img src="/api/placeholder/40/24" alt="PayPal" className="h-6" />
-                <img src="/api/placeholder/40/24" alt="Amex" className="h-6" />
-              </div>
-            </div>
-          </div>
+   
         </div>
       </footer>
     );
