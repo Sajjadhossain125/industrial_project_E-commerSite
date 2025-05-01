@@ -7,6 +7,7 @@ import Footermain from '../../components/Footer/FooterMain'
 import SnackBanner from '../../layout/Shope/Carousale'
 import ProductShow from '../../layout/Shope/ProuductShow'
 import DealsOfTheDay from '../../components/Products/Offers'
+import GroceryBanner from '../../components/Banner/ShopBanner'
 
 
 export default function ShopPage() {
@@ -20,6 +21,9 @@ export default function ShopPage() {
     <ProductShow/>
     <br />
     <DealsOfTheDay/>
+    <br />
+    <GroceryBanner/>
+    <br />
     
       </section>
       <Footer/>
